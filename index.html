@@ -45,11 +45,11 @@
               <p>2</p>
               <p>3</p>
             </div>
-            <div class="themeBtns">
-              <input type="radio" id="one" name="toggle" />
-              <input type="radio" id="two" name="toggle" />
-              <input type="radio" id="three" name="toggle" />
-            </div>
+            <form id="themeForm" class="themeBtns">
+              <input type="radio" value="one" id="one" name="toggle" />
+              <input type="radio" value="two" id="two" name="toggle" />
+              <input type="radio" value="three" id="three" name="toggle" />
+            </form>
           </div>
         </div>
       </div>
@@ -63,37 +63,34 @@
       </div>
       <div class="keypad bg-keypad-bg rounded-lg border-none">
         <div class="grid grid-cols-4 gap-3 p-5 text-[30px]">
-          <button data-number="7" class="btn">7</button>
-          <button data-number="8" class="btn">8</button>
-          <button data-number="9" class="btn">9</button>
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
           <button
-            data-delete
             id="btn-del"
             class="bg-del-key text-text-light shadow-del-shadow text-xl shadow-[0_3px_0]"
           >
             DEL
           </button>
-          <button data-number="4" class="btn">4</button>
-          <button data-number class="btn">5</button>
-          <button data-number class="btn">6</button>
-          <button data-operator id="btn-plus" class="btn">+</button>
-          <button data-number class="btn">1</button>
-          <button data-number class="btn">2</button>
-          <button data-number class="btn">3</button>
-          <button data-operator id="btn-minus" class="btn">-</button>
-          <button data-number class="btn">.</button>
-          <button data-number class="btn">0</button>
-          <button data-operator id="btn-divide" class="btn">/</button>
-          <button data-operator id="btn-multiply">x</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button id="btn-plus" class="btn">+</button>
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button id="btn-minus" class="btn">-</button>
+          <button class="btn">.</button>
+          <button class="btn">0</button>
+          <button id="btn-divide" class="btn">/</button>
+          <button id="btn-multiply">x</button>
           <button
-            data-reset
             id="btn-reset"
             class="btn bg-reset-key text-text-light shadow-reset-shadow col-start-1 col-end-3 text-xl shadow-[0_3px_0]"
           >
             RESET
           </button>
           <button
-            data-equals
             id="btn-equals"
             class="btn bg-equal-key text-text-light shadow-equal-shadow col-start-3 col-end-5 shadow-[0_3px_0]"
           >
@@ -114,6 +111,6 @@
         @ shehza-d
       </a>
     </footer> -->
-    <script src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
