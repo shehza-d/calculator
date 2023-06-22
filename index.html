@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Calculator App by Shehzad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="theme-first bg-main-bg font-display grid min-h-screen w-screen place-items-center"
+  >
+    <div class="max-w-screen-[1440px] mx-auto w-[90%] sm:w-[50%] sm:max-w-sm">
+      <div
+        class="header text-text-dark flex flex-row items-center justify-between text-[1.5rem]"
+      >
+        <div>
+          <h1>Calculator</h1>
+        </div>
+        <div class="flex flex-row items-center">
+          <p class="text-xs">THEME</p>
+          <div class="ml-5">
+            <div class="flex flex-row justify-around text-xs">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <div class="themeBtns">
+              <input type="radio" id="one" name="toggle" />
+              <input type="radio" id="two" name="toggle" />
+              <input type="radio" id="three" name="toggle" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="screen bg-screen-bg my-4 flex h-20 flex-col justify-center rounded-lg border-none"
+      >
+        <p
+          class="text-screen-text overflow-x-auto px-5 text-right text-[2.25rem]"
+          id="screen-text"
+        ></p>
+      </div>
+      <div class="keypad bg-keypad-bg rounded-lg border-none">
+        <div class="grid grid-cols-4 gap-3 p-5 text-[30px]">
+          <button data-number="7" class="btn">7</button>
+          <button data-number="8" class="btn">8</button>
+          <button data-number="9" class="btn">9</button>
+          <button
+            data-delete
+            id="btn-del"
+            class="bg-del-key text-text-light shadow-del-shadow text-xl shadow-[0_3px_0]"
+          >
+            DEL
+          </button>
+          <button data-number="4" class="btn">4</button>
+          <button data-number class="btn">5</button>
+          <button data-number class="btn">6</button>
+          <button data-operator id="btn-plus" class="btn">+</button>
+          <button data-number class="btn">1</button>
+          <button data-number class="btn">2</button>
+          <button data-number class="btn">3</button>
+          <button data-operator id="btn-minus" class="btn">-</button>
+          <button data-number class="btn">.</button>
+          <button data-number class="btn">0</button>
+          <button data-operator id="btn-divide" class="btn">/</button>
+          <button data-operator id="btn-multiply">x</button>
+          <button
+            data-reset
+            id="btn-reset"
+            class="btn bg-reset-key text-text-light shadow-reset-shadow col-start-1 col-end-3 text-xl shadow-[0_3px_0]"
+          >
+            RESET
+          </button>
+          <button
+            data-equals
+            id="btn-equals"
+            class="btn bg-equal-key text-text-light shadow-equal-shadow col-start-3 col-end-5 shadow-[0_3px_0]"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer
+      class="flex h-10 items-center justify-center bg-purple-700 text-center text-gray-800"
+    >
+      <a
+        class="text-white hover:underline"
+        href="https://github.com/shehza-d"
+        target="_blank"
+      >
+        @ shehza-d
+      </a>
+    </footer> -->
+    <script src="./app.js"></script>
+  </body>
+</html>
